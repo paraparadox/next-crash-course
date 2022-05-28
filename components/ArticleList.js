@@ -7,7 +7,7 @@ const ArticleList = ({ articles }) => {
       {
         articles.map(
           article => (
-            <ArticleItem article={ article } />
+            <ArticleItem key={ article.id } article={ article } />
           )
         )
       }
